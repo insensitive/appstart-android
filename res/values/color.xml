@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="White">#ffffff</color>
+	<color name="ColorBackGround">#990000</color>
+	<color name="ColorDarkRedForFont">#921519</color>
+	<color name="ColorDarkGrayForFont">#3c3435</color>
+	<color name="red">#e50822</color>
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="buttonfont">#061476</color>
+	<color name="background">#c7c8ce</color>
+	<color name="mainback">#2060a0</color>
+
+
+	<color name="AliceBlue ">#F0F8FF</color>
+	<color name="AntiqueWhite ">#FAEBD7</color>
+	<color name="Beige ">#F5F5DC</color>
+	<color name="BlueViolet ">#8A2BE2</color>
+	<color name="brown">#A52A2A</color>
+	<color name="MediumWood">#A68064</color>
+	<color name="DarkGreen">#2F4F2F</color>
+	<color name="khaki">#F0E68C</color>
+	<color name="khaki4">#8B864E</color>
+	<color name="PeachPuff3">#CDAF95</color>
+	<color name="honeydew3">#C1CDC1</color>
+	<color name="PaleGoldenrod">#EEE8AA</color>
+	<color name="IndianRed1">#FF6A6A</color>
+	<color name="grey">#736F6E</color>
+	<color name="orange">#EE9A00</color>
+	<color name="seprator">#b9b9b9</color>
+	<color name="darkgrey">#686868</color>
+
+	
+	<color name="tabMedium">#2B2B2B</color>
+	<color name="tabDark">#000000</color>
+	<color name="tabTransparent">#10ffffff</color>
+	<color name="seperator">#cacaca</color>
+</resources>

@@ -1,0 +1,301 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appstart"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <permission
+        android:name="com.example.mapdemo.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.mapdemo.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+   
+
+    <application
+        android:name=".application.Appstartapplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBIvMUYWw0K2vxUVzWJKO90Qu_526vKe8c" />
+
+        <activity android:name=".BasicMapActivity" />
+        <activity android:name=".BasicMapActivity1" />
+          <activity android:name=".BasicMapActivity3" />
+        <activity android:name=".ProgrammaticDemoActivity" />
+        <activity
+            android:name=".Login"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".TabSample"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.appstart.HomeWallpaper"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Contact"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ContactDetails"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PushMessage"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PushMessageDetails"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".More"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Website"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Website1"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SocialMedia"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Cms"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Cms1"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Cms2"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CmsChild"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CmsChild1"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CmsChild2"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Events"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EventsDetails"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DocumentCategory"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Document"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DocumentDetails"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ImageGalleryCategory"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ImageGalleryCategory1"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ImageGallery"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ImageGallery1"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Music"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MusicDetails"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appstart.ghlab.ghgallery.GHGalleryDetail"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.appstart.ghlab.ghgallery.GHGalleryDetail1"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".Webview"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+            
+        <activity android:name=".tabgroup.TabGroupHomeWallpaper1" >
+        </activity>
+        <activity android:name=".tabgroup.TabGroupContact" >
+        </activity>
+        <activity android:name=".tabgroup.TabGroupCms" >
+        </activity>
+        <activity android:name=".tabgroup.TabGroupCms1" >
+        </activity>
+        <activity android:name=".tabgroup.TabGroupCms2" >
+        </activity>
+        <activity android:name=".tabgroup.TabGroupEvents" >
+        </activity>
+        <activity android:name=".tabgroup.TabGroupDocument" >
+        </activity>
+        <activity android:name=".tabgroup.TabGroupImageGallery" >
+        </activity>
+        <activity android:name=".tabgroup.TabGroupImageGallery1" >
+        </activity>
+        <activity android:name=".tabgroup.TabGroupPushMessage" >
+        </activity>
+        <activity android:name=".tabgroup.TabGroupSocialMedia" >
+        </activity>
+        <activity android:name=".tabgroup.TabGroupMusic" >
+        </activity>
+        <activity android:name=".tabgroup.TabGroupWebsite" >
+        </activity>
+        <activity android:name=".tabgroup.TabGroupWebsite1" >
+        </activity>
+        <activity android:name=".tabgroup.TabGroupMore" >
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.appstart" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GCMIntentService" />
+
+        <uses-library android:name="com.google.android.maps" />
+    </application>
+
+   
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.appstart.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.appstart.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+</manifest>

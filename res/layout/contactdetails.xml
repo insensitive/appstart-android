@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_cd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/White" >
+
+    <include layout="@layout/header" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+		
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/lay_main_contact_details"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp" >
+
+                        <ImageView
+                            android:id="@+id/iv_ic_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="10dp"
+                            android:adjustViewBounds="true"
+                            android:maxHeight="60dp" />
+
+                        <TableLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box_top" />
+
+                            <TableRow
+                                android:id="@+id/tr_phone"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box_bg"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp" >
+
+                                <TextView
+                                    android:id="@+id/txt_p"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/phone"
+                                    android:textColor="@color/darkgrey"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_phone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text=""
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <ImageView
+                                android:id="@+id/iv_sep_email"
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="@drawable/box_divider" />
+
+                            <TableRow
+                                android:id="@+id/tr_email"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box_bg"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="5dp" >
+
+                                <TextView
+                                    android:id="@+id/txt_e"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/email"
+                                    android:textColor="@color/darkgrey"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_email"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <ImageView
+                                android:id="@+id/iv_sep_website"
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="@drawable/box_divider" />
+
+                            <TableRow
+                                android:id="@+id/tr_website"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box_bg"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="5dp" >
+
+                                <TextView
+                                    android:id="@+id/txt_w"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/website"
+                                    android:textColor="@color/darkgrey"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_web"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <ImageView
+                                android:id="@+id/iv_sep_phone2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="@drawable/box_divider" />
+
+                            <TableRow
+                                android:id="@+id/tr_phone2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box_bg"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="5dp" >
+
+                                <TextView
+                                    android:id="@+id/txt_p2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/phone2"
+                                    android:textColor="@color/darkgrey"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_phone2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <ImageView
+                                android:id="@+id/iv_sep_phone3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="@drawable/box_divider" />
+
+                            <TableRow
+                                android:id="@+id/tr_phone3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box_bg"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="5dp" >
+
+                                <TextView
+                                    android:id="@+id/txt_p3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/phone3"
+                                    android:textColor="@color/darkgrey"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_phone3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <ImageView
+                                android:id="@+id/iv_sep_fax"
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="@drawable/box_divider" />
+
+                            <TableRow
+                                android:id="@+id/tr_fax"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box_bg"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="5dp" >
+
+                                <TextView
+                                    android:id="@+id/txt_f"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/fax"
+                                    android:textColor="@color/darkgrey"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_fax"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <ImageView
+                                android:id="@+id/iv_sep_address"
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:background="@drawable/box_divider" />
+
+                            <TableRow
+                                android:id="@+id/tr_address"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box_bg"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="5dp" >
+
+                                <TextView
+                                    android:id="@+id/txt_a"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="@string/address"
+                                    android:textColor="@color/darkgrey"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_address"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box_bottom" />
+                        </TableLayout>
+
+                        <TableLayout
+                            android:id="@+id/tbl_timing"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box_top" />
+
+                            <TableLayout
+                                android:id="@+id/tl_timings"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box_bg"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:shrinkColumns="*"
+                                android:stretchColumns="*" >
+                            </TableLayout>
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box_bg"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:visibility="gone" >
+
+                                <TextView
+                                    android:id="@+id/txt_t"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/timings"
+                                    android:textColor="@color/darkgrey"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txt_tmg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box_bottom" />
+                        </TableLayout>
+
+                        <TableLayout
+                            android:id="@+id/tbl_info"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box_top" />
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box_bg"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp" >
+
+                                <TextView
+                                    android:id="@+id/txt_info"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </TableRow>
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box_bottom" />
+                        </TableLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/shadow" >
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/trans_bg"
+        android:padding="3dp" >
+
+        <Button
+            android:id="@+id/ib_call_cd"
+            style="@style/btn_style_contact"
+            android:layout_weight="1"
+            android:text="Call" />
+
+        <Button
+            android:id="@+id/ib_vcard"
+            style="@style/btn_style_contact"
+            android:layout_weight="1"
+            android:text="vCard" />
+
+        <Button
+            android:id="@+id/ib_map_contact"
+            style="@style/btn_style_contact"
+            android:layout_weight="1"
+            android:text="Map" />
+
+          <Button
+            android:id="@+id/ib_get_route"
+            style="@style/btn_style_contact"
+            android:layout_weight="1"
+            android:text="Route" />
+    </LinearLayout>
+
+</LinearLayout>

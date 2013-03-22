@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">AppStart</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="language_code">de</string>
+    <string name="title_activity_main">App Start</string>
+    <string name="contact">Contact</string>
+    <string name="push_message">Pousser un mpush-berichtessage</string>
+    <string name="settings">Instellingen</string>
+	
+</resources>
